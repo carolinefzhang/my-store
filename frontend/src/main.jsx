@@ -10,10 +10,10 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
       <Auth0ProviderWithNavigate
-        domain="https://dev-u87o2pzw50n6mif5.us.auth0.com"
-        clientId="nb0YBpMx3RNvEdDEnPPfS661V2wqvy96"
-        redirectUri="http://localhost:5173/callback"
-        audience="https://mern-store-api"
+        domain={import.meta.env.VITE_AUTH0_DOMAIN}
+        clientId={import.meta.env.VITE_AUTH0_CLIENT_ID}
+        redirectUri={import.meta.env.VITE_AUTH0_REDIRECT_URI}
+        audience={import.meta.env.VITE_AUTH0_AUDIENCE}
       >
         <AuthProvider>
           <Provider>

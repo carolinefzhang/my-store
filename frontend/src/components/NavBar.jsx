@@ -30,7 +30,7 @@ const NavBar = () => {
             bgClip="text"
             letterSpacing="widest"
           >
-            MERN Store
+            My Store
           </Text>
         </ChakraLink>
         <HStack spacing={2} alignItems={"center"}>
