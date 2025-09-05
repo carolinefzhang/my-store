@@ -11,6 +11,13 @@
       "weight": 1
     }
   ],
+  "loadBalancers": [
+    {
+      "targetGroupArn": "arn:aws:elasticloadbalancing:us-east-1:595886674326:targetgroup/my-store-tg/6ddc61f76622b739",
+      "containerName": "my-store",
+      "containerPort": 5001
+    }
+  ],
   "containerDefinitions": [
     {
       "name": "my-store",
