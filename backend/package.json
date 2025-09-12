@@ -2,6 +2,13 @@
   "name": "my-store-backend",
   "version": "1.0.0",
   "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "jwks-rsa": "^3.2.0",
+    "mongodb": "^6.15.0",
+    "mongoose": "^8.13.1",
+    "permitio": "^2.7.2",
     "serverless-http": "^3.2.0"
   }
 }
