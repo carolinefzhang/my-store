@@ -1,6 +1,7 @@
 {
   "name": "my-store-backend",
   "version": "1.0.0",
+  "type": "module",
   "dependencies": {
     "dotenv": "^16.4.7",
     "express": "^5.1.0",
