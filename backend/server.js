@@ -1,4 +1,5 @@
 import express from 'express';
+import cors from 'cors';
 import { connectDB } from './config/db.js';
 import dotenv from 'dotenv';
 import productRoutes from './routes/product.route.js';
@@ -21,6 +22,7 @@ const PORT = process.env.PORT || 5001;
 
 const __dirname = path.resolve();
 
+app.use(cors());
 app.use(express.json());
 
 app.use("/api/products", productRoutes);
