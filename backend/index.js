@@ -1,4 +1,4 @@
-import serverlessHttp from 'serverless-http';
-import app from './server.js';
+const serverlessHttp = require('serverless-http');
+const app = require('./server.js');
 
-export const handler = serverlessHttp(app);
+module.exports.handler = serverlessHttp(app);
