@@ -6,7 +6,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "NODE_ENV=development nodemon backend/server.js",
     "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
-    "start": "NODE_ENV=production node backend/server.js"
+    "start": "NODE_ENV=production node backend/server.js",
+    "build:backend": "cd backend && npm install"
   },
   "type": "module",
   "keywords": [],
@@ -21,7 +22,8 @@
     "mongodb": "^6.15.0",
     "mongoose": "^8.13.1",
     "path": "^0.12.7",
-    "permitio": "^2.7.2"
+    "permitio": "^2.7.2",
+    "serverless-http": "^3.2.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.9"
