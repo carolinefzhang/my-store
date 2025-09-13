@@ -47,7 +47,7 @@ jobs:
         aws lambda update-function-configuration \
           --function-name ${{ secrets.LAMBDA_FUNCTION_NAME }} \
           --handler index.handler \
-          --runtime nodejs18.x \
+          --runtime nodejs22.x \
           --environment Variables="{MONGO_URI=${{ secrets.MONGO_URI }},PERMIT_API_KEY=${{ secrets.PERMIT_API_KEY }},PERMIT_PDP_URL=${{ secrets.PERMIT_PDP_URL }},AUTH0_DOMAIN=${{ secrets.AUTH0_DOMAIN }},NODE_ENV=lambda}"
     
     - name: Deploy API Gateway
