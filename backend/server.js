@@ -39,10 +39,13 @@ if (process.env.NODE_ENV === 'production') {
     });
 }
 
-app.listen(PORT, () => {
-    connectDB();
-    console.log(`Server is running on port ${PORT}`);
-});
+// Don't connect to DB on server startup in Lambda
+if (process.env.NODE_ENV !== 'lambda') {
+    app.listen(PORT, async () => {
+        await connectDB();
+        console.log(`Server is running on port ${PORT}`);
+    });
+}
 
 export default app;
 

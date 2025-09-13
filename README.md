@@ -103,6 +103,7 @@ npm run dev
 **Production Build:**
 ```bash
 npm run build
+npm run build:backend
 npm start
 ```
 
